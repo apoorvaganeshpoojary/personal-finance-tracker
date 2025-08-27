@@ -1,0 +1,75 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1, h3 {
+  color: #333;
+}
+
+form input, form select {
+  padding: 8px 10px;
+  margin-right: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 8px 15px;
+  border: none;
+  background-color: #36A2EB;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #2a85c4;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #36A2EB;
+  color: white;
+}
+
+.recommendation {
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.high-spend {
+  background-color: #FF6384; /* Red-ish */
+}
+
+.medium-spend {
+  background-color: #FFCE56; /* Yellow-ish */
+}
+
+.recommendation:not(.high-spend):not(.medium-spend) {
+  background-color: #36A2EB; /* Blue-ish for low spend */
+}
